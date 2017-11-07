@@ -1,6 +1,18 @@
-## Usage
+# 一切为了愉快的科学上网！El psy congroo!
 
-一切为了愉快的科学上网，el psy congroo!
+## Features
+
++ 白名单路由规则 (route/ip 命令)
++ 白名单DNS规则 (bind9)
++ Openconnect 穿墙 (服务器 BWG-LA-CN2)
++ ShiMo (VPN Client) 配置生成
+
+可以做到
+
++ 通过软路由/树莓派配置，实现全局自动翻墙 (route/dns)
++ 通过 ShiMo(Mac) 配置，实现本地自动翻墙 (route)
+
+## Usage
 
 #### Build route script
 
@@ -59,7 +71,7 @@ pre-down kill `cat /var/run/openconnect.pid`
 
 用 bind9 自己做个 dns，实现白名单方式的 dns proxy (国内 114.114.114.114)。
 
-在默认配置的基础上，配置只要改两个文件
+在**默认配置**的基础上，配置只要改两个文件
 
 **named.conf.options**
 
